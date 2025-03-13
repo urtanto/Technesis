@@ -44,8 +44,10 @@
 
 3. Для остановки и удаления контейнера:
    ```bash
-   docker stop technesis
-   docker rm technesis
+   docker stop container_id
+   ```
+   ```bash
+   docker rm container_id
    ```
 
 4. Полная очистка Docker:

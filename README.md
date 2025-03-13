@@ -94,7 +94,13 @@
     playwright install chromium
     ```
 
-6. Запуск проекта
+6. Разрешение на запуск браузера
+
+    ```bash
+    chmod -R a+x {{path to project}}/lib/{{python version}}/site-packages/undetected_playwright/driver
+    ```
+
+7. Запуск проекта
 
     ```bash
     python tg_bot.py .env

@@ -37,7 +37,7 @@ async def handle_single_doc(message: Message):
 async def fetch_data_from_item(url: str, xpath: str):
     try:
         async with async_playwright() as p:
-            browser = await p.chromium.launch(headless=False)
+            browser = await p.chromium.launch(headless=True)
             context = await browser.new_context()
             page = await context.new_page()
             await page.goto(url)

@@ -3,6 +3,10 @@ import io
 import os
 import re
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 import pandas as pd
 from aiogram import Bot, Dispatcher, Router, F
 from aiogram.filters import Command

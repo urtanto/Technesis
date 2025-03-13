@@ -1,0 +1,7 @@
+aiogram
+pandas
+openpyxl
+sqlalchemy
+playwright==1.40.0
+undetected-playwright-patch
+aiosqlite

@@ -45,7 +45,7 @@ async def fetch_data_from_item(url: str, xpath: str):
             context = await browser.new_context()
             page = await context.new_page()
             await page.goto(url)
-            await asyncio.sleep(10)
+            await asyncio.sleep(30)
             await page.wait_for_selector(xpath, timeout=30)
             element = await page.query_selector(xpath)
             data = await element.text_content() if element else None

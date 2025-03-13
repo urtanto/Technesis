@@ -120,9 +120,9 @@ async def process_document(message: Message):
     await message.reply(
         f"Количество товаров: {len(results)}\n"
         f"Количество успешных запросов: {len(filtered_results)}\n"
-        f"Максимальная цена: {max(filtered_results)}\n"
-        f"Средняя цена: {sum(filtered_results) / len(filtered_results)}\n"
-        f"Минимальная цена: {min(filtered_results)}"
+        f"Максимальная цена: {max(filtered_results) if len(filtered_results) else '-'}\n"
+        f"Средняя цена: {sum(filtered_results) / len(filtered_results) if len(filtered_results) else '-'}\n"
+        f"Минимальная цена: {min(filtered_results) if len(filtered_results) else '-'}"
     )
 
 

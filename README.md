@@ -103,5 +103,5 @@
 7. Запуск проекта
 
     ```bash
-    python tg_bot.py .env
+    python tg_bot.py
     ```

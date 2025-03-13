@@ -22,7 +22,7 @@
 
 - [`database/`](./database/) - моудль базы данных.
   - [`__init__.py`](./database/__init__.py) — инициализация модуля базы данных.
-  - [`models.py`](./database/models) — модели для ORM.
+  - [`models`](./database/models) — модели для ORM.
     - [`products.py`](./database/models/products.py) — таблица из задания.
 - [`database.db`](./database.db) — локальная база данных SQLite.
 - [`.gitignore`](./.gitignore) — список исключений для Git.
